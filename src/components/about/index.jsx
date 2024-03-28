@@ -56,7 +56,7 @@ const AboutDetails = () => {
           <img
             className="w-full h-auto"
             src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/top-langs?username=fullsuccess.world&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
-            alt="Minato"
+            alt="Kohdai"
             loading="lazy"
           />
         </ItemLayout>
@@ -65,7 +65,7 @@ const AboutDetails = () => {
           <img
             className="w-full h-auto"
             src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=fullsuccess.world&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
-            alt="Minato"
+            alt="Kohdai"
             loading="lazy"
           />
         </ItemLayout> */}
@@ -74,7 +74,7 @@ const AboutDetails = () => {
           <Image
             className="w-full h-auto"
             src={`https://skillicons.dev/icons?i=appwrite,aws,babel,bootstrap,cloudflare,css,d3,docker,figma,firebase,gatsby,git,github,graphql,html,ipfs,js,jquery,kubernetes,linux,mongodb,mysql,netlify,nextjs,nodejs,npm,postgres,react,redux,replit,sass,supabase,tailwind,threejs,vercel,vite,vscode,yarn`}
-            alt="Minato"
+            alt="Kohdai"
             loading="lazy"
           />
         </ItemLayout>
@@ -83,7 +83,7 @@ const AboutDetails = () => {
           <img
             className="w-full h-auto"
             src={`${process.env.NEXT_PUBLIC_GITHUB_STREAK_STATS_URL}?user=fullsuccess.world&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B`}
-            alt="Minato"
+            alt="Kohdai"
             loading="lazy"
           />
         </ItemLayout>
@@ -97,7 +97,7 @@ const AboutDetails = () => {
             <img
               className="w-full h-auto"
               src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/pin/?username=fullsuccess.world&repo=Nextjs-contentlayer-blog&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2`}
-              alt="Minato"
+              alt="Kohdai"
               loading="lazy"
             />
           </Link>
