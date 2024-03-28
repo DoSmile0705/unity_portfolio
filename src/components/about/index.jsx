@@ -20,9 +20,9 @@ const AboutDetails = () => {
             Welcome to my portfolio as a Unity 3D developer.
             With 7 years of experience in web development and 4 years specializing in Unity 3D development, I bring a wealth of knowledge and expertise to the table. My skills extend across various fields, including metaverse and online games, allowing me to tackle diverse and exciting projects. I thrive in collaborative environments and actively engage with the developer community.
 
-            If you're seeking creative and innovative solutions, partnering with me will be a rewarding experience. I am committed to delivering optimized and advanced products that exceed expectations. Your vision will be transformed into a captivating reality through my dedication and skill.
+            If you&apos;re seeking creative and innovative solutions, partnering with me will be a rewarding experience. I am committed to delivering optimized and advanced products that exceed expectations. Your vision will be transformed into a captivating reality through my dedication and skill.
 
-              Thank you for considering me as your developer. I am eager to embark on new ventures and contribute to your success. Let's create something extraordinary together.
+              Thank you for considering me as your developer. I am eager to embark on new ventures and contribute to your success. Let&apos;s create something extraordinary together.
             </pre>
           </p>
         </ItemLayout>
