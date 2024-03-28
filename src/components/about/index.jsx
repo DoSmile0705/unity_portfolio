@@ -4,17 +4,17 @@ import Link from "next/link";
 
 const AboutDetails = () => {
   return (
-    <section className="py-20 w-full">
-      <div className="grid grid-cols-12 gap-4 xs:gap-6  md:gap-8 w-full">
+    <section className="w-full py-20">
+      <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8">
         <ItemLayout
           className={
             " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
           }
         >
-          <h2 className="  text-xl md:text-2xl text-left w-full capitalize">
+          <h2 className="w-full text-xl text-left capitalize md:text-2xl">
             Web & Unity 3D developer
           </h2>
-          <p className="font-light  text-xs sm:text-sm md:text-base   ">
+          <p className="text-xs font-light sm:text-sm md:text-base ">
             Welcome to my portfolio as a Unity 3D developer.
             With 7 years of experience in web development and 4 years specializing in Unity 3D development, I bring a wealth of knowledge and expertise to the table. My skills extend across various fields, including metaverse and online games, allowing me to tackle diverse and exciting projects. I thrive in collaborative environments and actively engage with the developer community.
 
@@ -27,25 +27,25 @@ const AboutDetails = () => {
         <ItemLayout
           className={" col-span-full xs:col-span-6 lg:col-span-2 text-accent"}
         >
-          <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            15+ <sub className="font-semibold text-base">clients</sub>
+          <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
+            15+ <sub className="text-base font-semibold">clients</sub>
           </p>
         </ItemLayout>
         <ItemLayout
           className={"col-span-full xs:col-span-6 lg:col-span-2 text-accent"}
         >
-          <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
+          <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
             40+{" "}
-            <sub className="font-semibold text-base">projects</sub>
+            <sub className="text-base font-semibold">projects</sub>
           </p>
         </ItemLayout>
 
         <ItemLayout
           className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
         >
-          <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
+          <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
             7+{" "}
-            <sub className="font-semibold text-base">years of experience</sub>
+            <sub className="text-base font-semibold">years of experience</sub>
           </p>
         </ItemLayout>
 
@@ -70,7 +70,7 @@ const AboutDetails = () => {
         </ItemLayout> */}
 
         <ItemLayout className={"col-span-full"}>
-          <img
+          <Image
             className="w-full h-auto"
             src={`https://skillicons.dev/icons?i=appwrite,aws,babel,bootstrap,cloudflare,css,d3,docker,figma,firebase,gatsby,git,github,graphql,html,ipfs,js,jquery,kubernetes,linux,mongodb,mysql,netlify,nextjs,nodejs,npm,postgres,react,redux,replit,sass,supabase,tailwind,threejs,vercel,vite,vscode,yarn`}
             alt="Minato"

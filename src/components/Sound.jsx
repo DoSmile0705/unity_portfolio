@@ -6,7 +6,7 @@ import { createPortal } from "react-dom";
 
 const Modal = ({ onClose, toggle }) => {
   return createPortal(
-    <div className="fixed inset-0 bg-background/60 backdrop-blur-sm flex items-center justify-center">
+    <div className="fixed inset-0 flex items-center justify-center bg-background/60 backdrop-blur-sm">
       <div
         className="bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px]
             py-8 px-6 xs:px-10 sm:px-16 rounded shadow-glass-inset text-center space-y-8
@@ -16,13 +16,13 @@ const Modal = ({ onClose, toggle }) => {
         <div className="flex items-center justify-center space-x-4">
           <button
             onClick={toggle}
-            className="px-4 py-2 border border-accent/30 border-solid hover:shadow-glass-sm rounded mr-2"
+            className="px-4 py-2 mr-2 border border-solid rounded border-accent/30 hover:shadow-glass-sm"
           >
             Yes
           </button>
           <button
             onClick={onClose}
-            className="px-4 py-2 border border-accent/30 border-solid hover:shadow-glass-sm rounded"
+            className="px-4 py-2 border border-solid rounded border-accent/30 hover:shadow-glass-sm"
           >
             No
           </button>
@@ -39,19 +39,20 @@ const Sound = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
-  const handleFirstUserInteraction = () => {
-    const musicConsent = localStorage.getItem("musicConsent");
-    if (musicConsent === "true" && !isPlaying) {
-      audioRef.current.play();
-      setIsPlaying(true);
-    }
 
-    ["click", "keydown", "touchstart"].forEach((event) =>
-      document.removeEventListener(event, handleFirstUserInteraction)
-    );
-  };
 
   useEffect(() => {
+    const handleFirstUserInteraction = () => {
+      const musicConsent = localStorage.getItem("musicConsent");
+      if (musicConsent === "true" && !isPlaying) {
+        audioRef.current.play();
+        setIsPlaying(true);
+      }
+
+      ["click", "keydown", "touchstart"].forEach((event) =>
+        document.removeEventListener(event, handleFirstUserInteraction)
+      );
+    };
     const consent = localStorage.getItem("musicConsent");
     const consentTime = localStorage.getItem("consentTime");
 
