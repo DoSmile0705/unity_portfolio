@@ -42,7 +42,11 @@ const Sound = () => {
 
 
   useEffect(() => {
-    const handleFirstUserInteraction = () => {
+    const consent = localStorage.getItem("musicConsent");
+    const consentTime = localStorage.getItem("consentTime");
+
+    const handleInteraction = () => {
+      // Your existing logic inside handleFirstUserInteraction
       const musicConsent = localStorage.getItem("musicConsent");
       if (musicConsent === "true" && !isPlaying) {
         audioRef.current.play();
@@ -50,11 +54,9 @@ const Sound = () => {
       }
 
       ["click", "keydown", "touchstart"].forEach((event) =>
-        document.removeEventListener(event, handleFirstUserInteraction)
+        document.removeEventListener(event, handleInteraction)
       );
     };
-    const consent = localStorage.getItem("musicConsent");
-    const consentTime = localStorage.getItem("consentTime");
 
     if (
       consent &&
@@ -65,12 +67,19 @@ const Sound = () => {
 
       if (consent === "true") {
         ["click", "keydown", "touchstart"].forEach((event) =>
-          document.addEventListener(event, handleFirstUserInteraction)
+          document.addEventListener(event, handleInteraction)
         );
       }
     } else {
       setShowModal(true);
     }
+
+    return () => {
+      // Cleanup to remove event listeners when the component unmounts or dependencies change
+      ["click", "keydown", "touchstart"].forEach((event) =>
+        document.removeEventListener(event, handleInteraction)
+      );
+    };
   }, []);
 
   const toggle = () => {
