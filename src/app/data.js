@@ -35,53 +35,53 @@ export const projectsData = [
   },
   {
     id: 3,
-    name: "とあるVの作業部屋",
+    name: "とあるVの作業部屋(Unity-metaverse)",
     description: "",
     date: "2023-01-20",
     demoLink: "https://cluster.mu/w/44e5d42b-e863-498e-8936-689f9ea40c12",
   },
   {
     id: 4,
-    name: "Studio Symbol (L)",
+    name: "Studio Symbol (L)(Unity-metaverse)",
     description: "",
     date: "2022-05-30",
     demoLink: "https://cluster.mu/en/w/d1ab7718-93ae-4133-8942-34f98976bc71",
   },
   {
     id: 5,
-    name: "XYMCity",
+    name: "XYMCity(Unity-metaverse)",
     description: "",
     date: "2022-02-23",
     demoLink: "https://cluster.mu/w/a3115279-6d7a-4f6d-99f6-a010eca51e99",
   },
   {
     id: 6,
-    name: "Crypto Bar「Laplace」",
+    name: "Crypto Bar「Laplace」(Unity-metaverse)",
     description: "",
     date: "2023-01-29",
     demoLink: "https://cluster.mu/w/3b00165e-0177-4e56-b6c4-e59b664a0646",
   },
   {
     id: 7,
-    name: "hurel9",
+    name: "hurel9(Unity2D)",
     description: "",
     date: "2023-08-29",
     demoLink: "https://hurel9.itch.io/hurel",
   },
   {
     id: 8,
-    name: "3D-portfolio",
+    name: "3D-portfolio(three.js)",
     description: "",
     date: "2023-08-13",
     demoLink: "https://maxime-morel.xyz/",
   },
   {
     id: 9,
-    name: "リアルジグソーパズル",
+    name: "リアルジグソーパズル(Flutter)",
     description: "",
     date: "2024-01-10",
     demoLink: "https://realpuzzle.pages.dev/#/",
-  }
+  },
 ];
 
 export const BtnList = [
