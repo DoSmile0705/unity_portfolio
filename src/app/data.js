@@ -81,7 +81,7 @@ export const projectsData = [
     description: "",
     date: "2024-01-10",
     demoLink: "https://realpuzzle.pages.dev/#/",
-  },
+  }
 ];
 
 export const BtnList = [
